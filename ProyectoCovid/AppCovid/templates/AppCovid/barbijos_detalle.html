@@ -1,0 +1,26 @@
+{% extends "AppCovid/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido2 %}
+            <h1 class="mb-1"style="color: white">Detalle de los Barbijos</h1>
+        {% endblock %}
+
+
+        {% block contenido %}
+
+
+          <p>Marca del Barbijos: <i> {{ barbijos.marca}}</i></p>
+          <p>Tamaño del Barbijos: <i> {{ barbijos.tamanio}}</i></p>
+          <p>Precio: <i> {{ barbijos.precio}}</i></p>
+
+
+          <p>
+
+            <a href="{% url 'List' %}">Regresar</a>
+
+          </p>
+         
+
+        {% endblock %}
